@@ -7,7 +7,22 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '1024px',
+    },
     extend: {
+      colors: ({ theme }) => ({
+        'point-color': {
+          '' : '#0072F5',
+          dark : '#'
+        },
+        'font-color':{
+          '' : '#171717',
+          dark: theme('colors.white')
+        },
+      }),
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
