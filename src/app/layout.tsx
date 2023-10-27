@@ -1,6 +1,6 @@
 "use client"
-import Header from "@/component/common/Header";
-import LeftBar from "@/component/common/LeftBar";
+import Header from "@/components/common/Header";
+import LeftBar from "@/components/common/LeftBar";
 
 export default function RootLayout({
   children,
