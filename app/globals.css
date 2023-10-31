@@ -41,6 +41,12 @@
   --color-background: #000,
   --color-text: #FFF
 }
+.theme-greenary {
+  --color-primary: green,
+  --color-secondary: green,
+  --color-background: #000,
+  --color-text: #FFF
+}
 .scale-sm {
   --font-t1: 10rem,
   --font-t2: 6rem,

@@ -23,8 +23,9 @@ export default function RootLayout({
 
   return (
     <html>
-      <body className={`${theme}` + ` ${scale}`}>
-        <select
+      {/* <body className={`${theme}` + ` ${scale}`}> */}
+      <body className="text-primary">
+        {/* <select
           defaultValue={"light"}
           onChange={(e: any) => changeTheme(e.target.value)}
         >
@@ -39,7 +40,7 @@ export default function RootLayout({
           <option value={"sm"}>sm</option>
           <option value={"md"}>md</option>
           <option value={"lg"}>lg</option>
-        </select>
+        </select> */}
         <ul className="flex list-none">
           <li className="pr-[10px]">리액트</li>
           <li className="pr-[10px]">next</li>
