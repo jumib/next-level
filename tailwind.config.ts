@@ -8,13 +8,15 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    // 테마에 그냥 넣으면 기존 스타일 바꿈
+    // 기존 스타일에 추가하는 것
     extend: {
-      // colors: {
-      //   primary: 'var(--color-primary)',
-      //   secondary: 'var(--color-secondary)',
-      //   backgroundColor: 'var(--color-background)',
-      //   text: 'var(--color-text)',
-      // },
+      colors: {
+        primary: 'red',
+        secondary: 'var(--color-secondary)',
+        backgroundColor: 'var(--color-background)',
+        text: 'var(--color-text)',
+      },
       backgroundImage:{
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
