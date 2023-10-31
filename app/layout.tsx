@@ -8,8 +8,8 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <ul className="flex list-none">
-            <li className="pr-[10px]">리액트</li>
+        <ul className="md:flex lg:block sm:block list-none">
+            <li className="pr-[10px] text-point-color-light">리액트</li>
             <li className="pr-[10px]">next</li>
         </ul>
       {children}
