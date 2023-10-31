@@ -1,12 +1,27 @@
 "use client"
 
 export default function Header() {
+
+    const menu = [
+        {
+            "title": "next",
+            "link": "next"
+        },
+        {
+            "title": "리액트",
+            "link": "react"
+        }
+    ]
+
     return (
         <>
             <div>
                 <ul className="flex list-none">
-                    <li className="pr-[10px]">리액트</li>
-                    <li className="pr-[10px]">next</li>
+                    {
+                        menu.map((item)=>
+                            <li className="pr-[10px]">{item.title}</li>
+                        )
+                    }
                 </ul>
             </div>
         </>
