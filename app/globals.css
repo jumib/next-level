@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -14,9 +14,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body { */
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +24,56 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
+
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #e6e6e6;
+  --color-txt-primary: #0b5cd6;
+  --color-txt-secondary: #121212;
+  --color-txt-tertiary: #535353;
+
+  --color-bg-primary-dark: #000;
+  --color-bg-secondary-dark: #262626;
+  --color-txt-primary-dark: #0a57f3;
+  --color-txt-secondary-dark: #e9e9e9;
+  --color-txt-tertiary-dark: #858585;
+
+  --color-bg-primary-sepia: #efe5bf;
+  --color-bg-secondary-sepia: #a0967d;
+  --color-txt-primary-sepia: #5c3211;
+  --color-txt-secondary-sepia: #5c3211;
+  --color-txt-tertiary-sepia: #5a6d74;
+
+  --text-scale1-sm: 5rem;
+  --text-scale2-sm: 3rem;
+  --text-scale3-sm: 2rem;
+
+  --text-scale1-md: 10rem;
+  --text-scale2-md: 7rem;
+  --text-scale3-md: 4rem;
+
+  --text-scale1-lg: 15rem;
+  --text-scale2-lg: 12rem;
+  --text-scale3-lg: 9rem;
+}
+
+.theme-light {
+  background-color: var(--color-bg-primary);
+  color: var(--color-txt-primary);
+}
+.theme-dark {
+  background-color: var(--color-bg-primary-dark);
+  color: var(--color-txt-primary-dark);
+}
+.theme-sepia {
+  background-color: var(--color-bg-primary-sepia);
+  color: var(--color-txt-primary-sepia);
+}
+.scale-sm {
+  font-size: var(--text-scale3-sm);
+}
+.scale-md {
+  font-size: var(--text-scale3-md);
+}
+.scale-lg {
+  font-size: var(--text-scale3-lg);
 }
