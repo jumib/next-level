@@ -23,7 +23,7 @@ export default function RootLayout({
 
   return (
     <html>
-      <body className={`${theme}` + ` ${scale}`}>
+      <body className={`${theme}` + `${scale}`}>
         <select
           defaultValue={"theme-light"}
           onChange={(e: any) => changeTheme(e.target.value)}

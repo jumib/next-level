@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 
 :root {
   /* --foreground-rgb: 0, 0, 0;
@@ -67,13 +67,51 @@
 .theme-sepia {
   background-color: var(--color-bg-primary-sepia);
   color: var(--color-txt-primary-sepia);
+
+  .txt-primary {
+
+  }
+  .txt-secondary {
+
+  }
+  .bg-primary {
+
+  }
+  .bg-secondary {
+    
+  }
 }
+
 .scale-sm {
-  font-size: var(--text-scale3-sm);
+  .txt-1 {
+    font-size: var(--text-scale1-sm);
+  }
+  .txt-2 {
+    font-size: var(--text-scale2-sm);
+  }
+  .txt-3 {
+    font-size: var(--text-scale3-sm);
+  }
 }
 .scale-md {
-  font-size: var(--text-scale3-md);
+  .txt-1 {
+    font-size: var(--text-scale1-md);
+  }
+  .txt-2 {
+    font-size: var(--text-scale2-md);
+  }
+  .txt-3 {
+    font-size: var(--text-scale3-md);
+  }
 }
 .scale-lg {
-  font-size: var(--text-scale3-lg);
+  .txt-1 {
+    font-size: var(--text-scale1-lg);
+  }
+  .txt-2 {
+    font-size: var(--text-scale2-lg);
+  }
+  .txt-3 {
+    font-size: var(--text-scale3-lg);
+  }
 }
