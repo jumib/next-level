@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+:root {
+  --color-primary: red,
+  --color-secondary: red,
+  --color-background: red,
+  --color-text: #FFF,
+
+  /* dark--color-primary: #3CC, */
+  /* dark--color-secondary: #3CC, */
+  --color-dark-background: #000,
+  /* dark--color-text: #FFF */
+}
+
+.light {
+  background-color: var(--color-background),
+}
+.dark {
+  /* background-color: var(--color-dark-background), */
+  background-color: aqua;
+}
+.theme-sepia {
+  --color-primary: brown,
+  --color-secondary: brown,
+  --color-background: #000,
+  --color-text: #FFF
+}
+.theme-greenary {
+  --color-primary: green,
+  --color-secondary: green,
+  --color-background: #000,
+  --color-text: #FFF
+}
+.scale-sm {
+  --font-t1: 10rem,
+  --font-t2: 6rem,
+  --font-t3: 4rem,
+}
+.scale-md {
+  --font-t1: 20rem,
+  --font-t2: 14rem,
+  --font-t3: 8rem,
+}
+.scale-lg {
+  --font-t1: 30rem,
+  --font-t2: 25rem,
+  --font-t3: 18rem,
+}
