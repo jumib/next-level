@@ -57,28 +57,46 @@
 }
 
 .theme-light {
-  background-color: var(--color-bg-primary);
-  color: var(--color-txt-primary);
-}
-.theme-dark {
-  background-color: var(--color-bg-primary-dark);
-  color: var(--color-txt-primary-dark);
-}
-.theme-sepia {
-  background-color: var(--color-bg-primary-sepia);
-  color: var(--color-txt-primary-sepia);
-
   .txt-primary {
-
+    color: var(--color-txt-primary);
   }
   .txt-secondary {
-
+    color: var(--color-txt-secondary);
   }
   .bg-primary {
-
+    background-color: var(--color-bg-primary);
   }
   .bg-secondary {
-    
+    background-color: var(--color-bg-secondary);
+  }
+  
+}
+.theme-dark {
+  .txt-primary {
+    color: var(--color-txt-primary-dark);
+  }
+  .txt-secondary {
+    color: var(--color-txt-secondary-dark);
+  }
+  .bg-primary {
+    background-color: var(--color-bg-primary-dark);
+  }
+  .bg-secondary {
+    background-color: var(--color-bg-secondary-dark);
+  }
+}
+.theme-sepia {
+  .txt-primary {
+    color: var(--color-txt-primary-sepia);
+  }
+  .txt-secondary {
+    color: var(--color-txt-secondary-sepia);
+  }
+  .bg-primary {
+    background-color: var(--color-bg-primary-sepia);
+  }
+  .bg-secondary {
+    background-color: var(--color-bg-secondary-sepia);
   }
 }
 
@@ -113,5 +131,47 @@
   }
   .txt-3 {
     font-size: var(--text-scale3-lg);
+  }
+}
+
+@media (max-width: 640px) {
+  .scale {
+    .txt-1 {
+      font-size: var(--text-scale1-sm);
+    }
+    .txt-2 {
+      font-size: var(--text-scale2-sm);
+    }
+    .txt-3 {
+      font-size: var(--text-scale3-sm);
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .scale {
+    .txt-1 {
+      font-size: var(--text-scale1-md);
+    }
+    .txt-2 {
+      font-size: var(--text-scale2-md);
+    }
+    .txt-3 {
+      font-size: var(--text-scale3-md);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .scale {
+    .txt-1 {
+      font-size: var(--text-scale1-lg);
+    }
+    .txt-2 {
+      font-size: var(--text-scale2-lg);
+    }
+    .txt-3 {
+      font-size: var(--text-scale3-lg);
+    }
   }
 }

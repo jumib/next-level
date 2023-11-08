@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "./globals.css";
+import "./globals.scss";
 
 type Theme = "theme-light" | "theme-dark" | "theme-sepia";
 type Scale = "scale-sm" | "scale-md" | "scale-lg";
@@ -44,6 +44,7 @@ export default function RootLayout({
           <li className="pr-[10px]">리액트</li>
           <li className="pr-[10px]">next</li>
         </ul>
+        <div className="scaletxt-1">테스트</div>
         {children}
       </body>
     </html>
