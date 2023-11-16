@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import "./globals.scss";
+import Header from "../components/common/Header";
+import LeftBar from "../components/common/LeftBar";
 
 type Theme = "theme-light" | "theme-dark" | "theme-sepia";
 type Scale = "scale-sm" | "scale-md" | "scale-lg";
@@ -16,7 +18,7 @@ export default function RootLayout({
     setTheme(val);
   };
 
-  const [scale, setScale] = useState<Scale>("scale-md");
+  const [scale, setScale] = useState<Scale>("scale-sm");
   const changeScale = (val: Scale) => {
     setScale(val);
   };
@@ -33,7 +35,7 @@ export default function RootLayout({
           <option value={"theme-sepia"}>sepia</option>
         </select>
         <select
-          defaultValue={"scale-md"}
+          defaultValue={"scale-sm"}
           onChange={(e: any) => changeScale(e.target.value)}
         >
           <option value={"scale-sm"}>sm</option>
@@ -44,6 +46,10 @@ export default function RootLayout({
           <li className="txt-primary bg-primary txt-1">리액트</li>
           <li className="txt-secondary bg-secondary txt-2">next</li>
         </ul>
+
+        <Header/>
+        <LeftBar/>
+        
         {children}
       </body>
     </html>

@@ -3,7 +3,7 @@
 export default function LeftBar() {
     return (
         <>
-            <div>
+            <div className="left-width">
                 <ul>
                     <li>시작하기</li>
                 </ul>
