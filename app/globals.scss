@@ -133,3 +133,19 @@
     font-size: $--text-scale3-lg;
   }
 }
+
+@media (max-width: 640px){
+  .left-bar{ display: none; }
+  .right-bar{ display: none; }
+  .main{ width: 100%; }
+}
+@media (min-width: 640px) and (max-width: 768px){
+  .left-bar{ width: 284px; }
+  .right-bar{ display: none; }
+  .main{ width: 100%; }
+}
+@media (min-width: 768px){
+  .left-bar{ width: 284px; }
+  .right-bar{ width: 14rem; }
+  .main{ width: 100%; }
+}
