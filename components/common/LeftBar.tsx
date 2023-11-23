@@ -1,9 +1,11 @@
 "use client"
 
+import "../../app/css/LeftBar.scss";
+
 export default function LeftBar() {
     return (
         <>
-            <div className="left-width">
+            <div className="left-bar leftBar">
                 <ul>
                     <li>시작하기</li>
                 </ul>

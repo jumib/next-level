@@ -56,6 +56,8 @@
   $--text-scale3-lg: 9rem;
 // }
 
+body{ margin: 0px }
+
 .theme-light {
   .txt-primary {
     color: $--color-txt-primary;
@@ -149,3 +151,7 @@
   .right-bar{ width: 14rem; }
   .main{ width: 100%; }
 }
+
+// display
+.d-flex{ display: flex; }
+.d-none { display: none; }
