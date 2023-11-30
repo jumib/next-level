@@ -56,6 +56,11 @@
   $--text-scale3-lg: 9rem;
 // }
 
+.isFlex { 
+  display: flex; 
+  justify-content: space-between; 
+}
+
 .theme-light {
   .txt-primary {
     color: $--color-txt-primary;

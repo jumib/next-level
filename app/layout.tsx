@@ -4,6 +4,8 @@ import { useState } from "react";
 import "./globals.scss";
 import Header from "../components/common/Header";
 import LeftBar from "../components/common/LeftBar";
+import RightBar from "../components/common/RightBar";
+import MainPage from "../components/common/MainPage";
 
 type Theme = "theme-light" | "theme-dark" | "theme-sepia";
 type Scale = "scale-sm" | "scale-md" | "scale-lg";
@@ -42,14 +44,18 @@ export default function RootLayout({
           <option value={"scale-md"}>md</option>
           <option value={"scale-lg"}>lg</option>
         </select>
-        <ul className="flex list-none">
+        {/* <ul className="flex list-none">
           <li className="txt-primary bg-primary txt-1">리액트</li>
           <li className="txt-secondary bg-secondary txt-2">next</li>
-        </ul>
+        </ul> */}
 
-        <Header/>
-        <LeftBar/>
-        
+        <Header />
+        <div className="isFlex">
+          <LeftBar />
+          <MainPage />
+          <RightBar />
+        </div>
+
         {children}
       </body>
     </html>
