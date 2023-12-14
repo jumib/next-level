@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "./globals.scss";
+import "./css/globals.scss";
 import Header from "../components/common/Header";
 import LeftBar from "../components/common/LeftBar";
 import RightBar from "../components/common/RightBar";
@@ -44,10 +44,6 @@ export default function RootLayout({
           <option value={"scale-md"}>md</option>
           <option value={"scale-lg"}>lg</option>
         </select>
-        {/* <ul className="flex list-none">
-          <li className="txt-primary bg-primary txt-1">리액트</li>
-          <li className="txt-secondary bg-secondary txt-2">next</li>
-        </ul> */}
 
         <Header />
         <div className="isFlex">
